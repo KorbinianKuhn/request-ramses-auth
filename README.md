@@ -83,7 +83,7 @@ request.get('https://example.com/test', {
     ramses: {
         ticketServiceURL: 'https://127.0.0.1/ticket/',
         key: myPrivateKey,
-        authorizationHeader: `Bearer ${ticket}`
+        authorizationHeader: req.headers.authorization
     }
 })
 ```
@@ -131,11 +131,13 @@ $ npm run coverage
 ```
 
 ## Contribution
+
 Fork this repository and push in your ideas.
 
 Do not forget to add corresponding tests to keep up 100% test coverage.
 
 ## License
+
 The MIT License
 
 Copyright (c) 2017 Korbinian Kuhn, Tobias Eberle, Christof Kost, Steffen Mauser, Marc Schelling
