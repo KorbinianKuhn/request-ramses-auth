@@ -1,0 +1,35 @@
+{
+  "name": "request-ramses-auth",
+  "version": "1.0.0",
+  "description": "Simplified http requests with RAMSES",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.spec.js",
+    "coverage": "nyc --reporter=html mocha ./test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KorbinianKuhn/request-ramses-auth.git"
+  },
+  "keywords": [
+    "RAMSES",
+    "security",
+    "request",
+    "http"
+  ],
+  "author": "Korbinian Kuhn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KorbinianKuhn/request-ramses-auth/issues"
+  },
+  "homepage": "https://github.com/KorbinianKuhn/request-ramses-auth#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "nock": "^9.0.22",
+    "nyc": "^11.2.1",
+    "should": "^13.1.1"
+  },
+  "dependencies": {
+    "express-ramses-auth": "^1.2.1"
+  }
+}
